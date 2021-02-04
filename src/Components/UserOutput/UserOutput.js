@@ -5,8 +5,7 @@ class UserOutput extends Component
     render() {
         return(
             <div className='UserOutput'>
-                <p>p1</p>
-                <p>p2</p>
+                <p>{this.props.username}</p>
             </div>
         )
     }

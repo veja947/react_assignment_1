@@ -5,7 +5,7 @@ class UserInput extends Component
     render() {
         return(
             <div className='UserInput'>
-                <input/>
+                <input />
             </div>
         )
     }

@@ -13,8 +13,8 @@ class App extends Component {
           <h1 className="App-title">Welcome to React</h1>
         </header>
         <br/>
-        <UserOutput/>
-        <UserOutput/>
+        <UserOutput username='user name1'/>
+        <UserOutput username='user name2'/>
       </div>
     );
   }
