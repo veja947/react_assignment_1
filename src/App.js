@@ -29,6 +29,19 @@ class App extends Component {
         })
     };
 
+    editInputHandler = (e) => {
+        this.setState({
+            outputs: [
+                {
+                    username: e.target.value
+                },
+                {
+                    username: e.target.value
+                }
+            ]
+        })
+    };
+
 
     render() {
         return (
@@ -40,7 +53,9 @@ class App extends Component {
                 <br/>
                 <button onClick={this.changeUsername}>Change Username</button>
                 <h1>user input 1</h1>
-                <UserInput currentValue = {this.state.outputs[0].username} />
+                <UserInput
+                    editInput={this.editInputHandler}
+                    currentValue = {this.state.outputs[0].username} />
                 <UserOutput username={this.state.outputs[0].username}/>
                 <h1>user input 2</h1>
                 <UserInput currentValue={this.state.outputs[1].username} />
